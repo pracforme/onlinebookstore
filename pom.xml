@@ -49,5 +49,5 @@
 	<properties>
 		<sonar.host.url>http://18.117.112.110:9000</sonar.host.url>
 		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</password>
+		<sonar.password>admin</sonar.password>
 </project>
