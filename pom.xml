@@ -51,4 +51,19 @@
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
 	</properties>
+		<distributionManagement>
+		
+	    <repository>
+	      <id>nexus</id>
+	      <name>Sreekart Releases Nexus Repository</name>
+	      <url>http://18.117.112.110:8081/repository/maven-releases/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Sreekart Nexus snapshot Repository </name>
+	      <url>http://18.117.112.110:8081/repository/maven-snapshots/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>	
 </project>
