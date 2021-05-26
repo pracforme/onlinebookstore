@@ -46,8 +46,7 @@
   		<version>3.1.0</version>
   	</dependency>
   </dependencies>
-	<distributionManagement>
-		
+	<distributionManagement>	
 	    <repository>
 	      <id>nexus</id>
 	      <name>Sreekart Releases Nexus Repository</name>
@@ -59,6 +58,5 @@
 	      <name>Sreekart Nexus snapshot Repository </name>
 	      <url>http://18.117.112.110:8081/repository/maven-snapshots/</url>
 	    </snapshotRepository>
-	    
 	</distributionManagement>	
 </project>
