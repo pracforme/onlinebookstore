@@ -17,21 +17,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
-	<distributionManagement>
-	    <repository>
-	      <id>nexus</id>
-	      <name>bookstore Releases Nexus Repository</name>
-	      <url>http://18.206.247.133:8081/repository/bookstore-dev-release/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>bookstore Nexus snapshot Repository </name>
-	      <url>http://18.206.247.133:8081/repository/bookstore-dev-snapshot/</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
-  <build>
+	<build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
@@ -69,8 +55,6 @@
   		<artifactId>postgresql</artifactId>
   		<version>42.2.8</version>
   	</dependency>
-  	
-  	
 	<dependency>
 	    <groupId>mysql</groupId>
 	    <artifactId>mysql-connector-java</artifactId>
@@ -84,17 +68,16 @@
   		<version>3.1.0</version>
   	</dependency>
   </dependencies>
-	<distributionManagement>	
+	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Sreekart Releases Nexus Repository</name>
-	      <url>http://18.117.112.110:8081/repository/maven-releases/</url>
+	      <name>bookstore Releases Nexus Repository</name>
+	      <url>http://18.206.247.133:8081/repository/bookstore-dev-release/</url>
 	    </repository>
-	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Sreekart Nexus snapshot Repository </name>
-	      <url>http://18.117.112.110:8081/repository/maven-snapshots/</url>
-	    </snapshotRepository>
-	</distributionManagement>	
-</project>
+	      <name>bookstore Nexus snapshot Repository </name>
+	      <url>http://18.206.247.133:8081/repository/bookstore-dev-snapshot/</url>
+	    </snapshotRepository>  
+	</distributionManagement>
+	</project>
