@@ -4,6 +4,28 @@
   <artifactId>onlinebookstore</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+	<properties>
+		<jdk.version>1.8</jdk.version>
+		<sonar.host.url>http://52.90.41.23:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin</sonar.password>
+              	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        </properties>
+	<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>bookstore Releases Nexus Repository</name>
+	      <url>http://52.90.41.23:8081/repository/bookstore-dev-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>bookstore Nexus snapshot Repository </name>
+	      <url>http://52.90.41.23:8081/repository/bookstore-dev-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
