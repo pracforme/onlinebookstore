@@ -4,17 +4,6 @@
   <artifactId>onlinebookstore</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-	<plugin>
-    <groupId>org.sonarsource.scanner.maven</groupId>
-    <artifactId>sonar-maven-plugin</artifactId>
-    <version>3.6.0.1398</version>
-</plugin>
-<profile>
-    <id>sonar</id>
-    <activation>
-        <activeByDefault>true</activeByDefault>
-    </activation>
-</profile>
 	<properties>
 		<jdk.version>1.8</jdk.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
@@ -60,6 +49,17 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+	    <plugin>
+    <groupId>org.sonarsource.scanner.maven</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>3.6.0.1398</version>
+</plugin>
+<profile>
+    <id>sonar</id>
+    <activation>
+        <activeByDefault>true</activeByDefault>
+    </activation>
+</profile>
     </plugins>
   </build>
   <dependencies>
