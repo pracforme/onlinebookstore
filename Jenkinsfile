@@ -21,7 +21,7 @@ pipeline{
         {
             steps{
                 sshagent(['tomtom']) {
-                sh "scp -o StrictHostKeyChecking=no target/onlinebookstore-0.0.1-SNAPSHOT.war ec2-user@http://3.108.193.253/opt/tomcat/webapps/"
+                sh "scp -o StrictHostKeyChecking=no target/onlinebookstore-0.0.1-SNAPSHOT.war ec2-user@http://3.108.193.253:/opt/tomcat/webapps/"
 }
             }
         }
