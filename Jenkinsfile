@@ -20,7 +20,7 @@ pipeline{
         stage("DeployInTomcat")
         {
             steps{
-                sshagent(['72873b8d-60ae-4f8a-8f2c-9dacb5196c46']) {
+                sshagent(['tomtom']) {
                 sh "scp -o StrictHostKeyChecking=no target/onlinebookstore-0.0.1-SNAPSHOT.war ec2-user@http://3.108.193.253/opt/tomcat/webapps/"
 }
             }
